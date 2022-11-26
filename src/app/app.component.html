@@ -1,0 +1,46 @@
+<section class="container">
+  <div class="section-container">
+    <div class="section-banner">
+
+      <div class="section-display">
+
+        <app-button class="button link-button">
+          <svg width="28" height="28" viewBox="0 0 24 24" stroke-width="1.8"
+            stroke="#2E2E2E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <polyline points="15 6 9 12 15 18" />
+          </svg>
+          <span>Volver</span>
+        </app-button>
+        
+      </div>
+
+      <h2 class="section-title">
+        <app-button class="button link-button position-button">
+          <svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.8"
+            stroke="#2E2E2E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <polyline points="15 6 9 12 15 18" />
+          </svg>
+          <span>Volver</span>
+        </app-button>
+        Organizar mis favoritos
+      </h2>
+    </div>
+
+    <div class="section-apps-container">
+      <div class="section-applications">
+        <ng-container *ngFor="let item of items; let i = index">
+          <app-card [data]="item" ></app-card>
+        </ng-container>
+      </div>
+  
+      <div class="section-below">
+        <app-button class="button primary-button">
+          Guardar aplicaciones favoritas
+        </app-button>
+      </div>
+    </div>
+
+  </div>
+</section>

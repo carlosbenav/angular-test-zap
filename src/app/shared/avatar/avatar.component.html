@@ -1,0 +1,11 @@
+<div 
+  class="card-icon-container" 
+  [style.background-image]="'linear-gradient('+ bgBase +', '+ bgAccent +')'"
+  [style.height]="size + 'px'"
+  [style.width]="size + 'px'"
+>
+  <img [width]="iconSize" [src]="icon" alt="" (error)="handleErrorImage()">
+  <span class="card-icon-pinned" *ngIf="pinned">
+    <img width="18" height="18" src="assets/icons/pinned.svg" alt="">
+  </span>
+</div>

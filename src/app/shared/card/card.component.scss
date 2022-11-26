@@ -1,0 +1,166 @@
+:host {
+  margin: 0 auto;
+  max-width: 150px;
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.card-content {
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 166px;
+  padding: 15px 10px 10px;
+}
+
+.card-new {
+  background-color: var(--app-new-color) !important;
+}
+
+.card-hover {
+  background-color: var(--app-hov-color) !important;
+}
+
+.card-default {
+  background-color: var(--card-bg-color);
+}
+
+.card-button {
+  border-radius: 50%;
+  background-color: var(--gray);
+  display: grid;
+  height: 26px;
+  place-content: center;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  width: 26px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-button [role="img"] {
+  width: 20px;
+  height: 20px;
+}
+
+.card-button-menu {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.card-button:hover {
+  transform: scale(1.05);
+}
+
+.card-button:active {
+  transform: scale(0.95);
+}
+
+.checked-button {
+  background-color: var(--green);
+}
+
+.card-title {
+  color: var(--black);
+  font-family: var(--font-family-notosans);
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+.card-description {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  overflow-y: auto;
+  height: 100px;
+  margin: 0 0 1em 0;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.card-description::-webkit-scrollbar { 
+  display: none;
+}
+
+.card-vpn-desc {
+  display: flex;
+  align-items: center;
+}
+
+.card-vpn {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.card-ribbon {
+  margin: 0;
+  padding: 1px 0;
+  background-color: var(--app-ribbon-color);
+  width: 100%;
+  position: absolute;
+  transform: translateX(4%) translateY(80%) rotate(-45deg);
+  transform-origin: top left;
+  left: 0;
+  top: 0;
+}
+
+.card-ribbon:before,
+.card-ribbon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--app-ribbon-color);
+}
+
+.card-ribbon:before {
+  left: 100%;
+}
+
+.card-ribbon:after {
+  right: 100%;
+}
+
+.rotate-x {
+  transform: rotateY(180deg);
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 10px auto;
+  cursor: pointer;
+  width: fit-content;
+}
+
+app-avatar {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 480px){
+  .card {
+    margin-bottom: 15%;
+  }
+}

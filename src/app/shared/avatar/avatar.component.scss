@@ -1,0 +1,22 @@
+.card-icon-container {
+  border-radius: 50%;
+  display: inline-grid;
+  height: var(--app-size);
+  place-content: center;
+  width: var(--app-size);
+  position: relative;
+}
+
+.card-icon-pinned {
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+}
