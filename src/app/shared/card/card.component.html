@@ -20,7 +20,7 @@
   <div class="card-content" (click)="flipCard()">
     <ng-container *ngIf="state === 0">
       <div class="card-ribbon" *ngIf="data.marcado === 'imp'">
-        <img width="20" src="assets/icons/star.svg" alt="">
+        <img width="20" src="assets/icons/star.png" alt="">
       </div>
 
       <app-avatar 
@@ -39,8 +39,8 @@
       <h3 class="card-title">{{ data.NameAplication }}</h3>
       <p class="card-description">{{ data.desAp }}</p>
       <div class="card-vpn-desc">
-        <img *ngIf="data.idvpn === 1 || data.idvpn === 3" width="20" src="assets/icons/shield-lock.svg" alt="">
-        <img *ngIf="data.idvpn === 2 || data.idvpn === 3" width="20" src="assets/icons/shield-x.svg" alt="">
+        <img *ngIf="data.idvpn === 1 || data.idvpn === 3" width="20" src="assets/icons/shield-lock.png" alt="">
+        <img *ngIf="data.idvpn === 2 || data.idvpn === 3" width="20" src="assets/icons/shield-x.png" alt="">
         <span class="card-vpn">{{ data.desVpn }}</span>
       </div>
     </div>
@@ -54,7 +54,7 @@
       [disabled]="data.marcado === 'imp'"
       [class.checked-button]="data.isFavorite"
     >
-      <img width="18" height="18" src="assets/icons/check.svg" alt="">
+      <img width="18" height="18" src="assets/icons/check.png" alt="">
     </button>
     
     <a 
@@ -64,7 +64,7 @@
       rel="noopener noreferrer"
       (click)="clicked.emit($event)"
     >
-      <img width="18" height="18" src="assets/icons/arrow-right.svg" alt="">
+      <img width="18" height="18" src="assets/icons/arrow-right.png" alt="">
     </a>
   </div>
 </div>

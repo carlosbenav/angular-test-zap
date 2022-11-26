@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-const DEFAULT_ICON = 'assets/icons/mytp_logo.svg';
+const DEFAULT_ICON = 'assets/icons/mytp_logo.png';
 const DEFAULT_COLOR = '#EDEAEF';
 const DEFAULT_SIZE = 84;
 const DEFAULT_ICON_SIZE = 56;
